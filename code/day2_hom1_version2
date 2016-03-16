@@ -1,0 +1,4 @@
+animals = (1..16).to_a()
+
+animals.each_slice(4) { |a| p a }
+# p is puts

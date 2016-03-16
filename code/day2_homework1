@@ -1,0 +1,17 @@
+animals = (1..16).to_a()
+
+#def print_animals(animals,element)
+#singleElementOfArray = animals[element]
+#print singleElementOfArray
+#end
+
+def add_new_line(currentElement)
+  if (currentElement==4 || currentElement==8 || currentElement==12 || currentElement==16)
+    print "\n"
+  end
+end
+
+animals.each do |element|
+print (element.to_s) + ','
+add_new_line(element)
+end

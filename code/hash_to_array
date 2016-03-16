@@ -1,0 +1,4 @@
+hash = {:a => {"aa" => 11,"ab" => 12}, :b => {"ba" => 21,"bb" => 22}}
+puts hash
+new_hash = hash.inject({}) { |h, (key, value)| h[key] = value.to_a; h }
+puts new_hash
